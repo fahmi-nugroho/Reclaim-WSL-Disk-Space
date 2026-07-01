@@ -73,8 +73,7 @@ Perintah ini memastikan file `ext4.vhdx` tidak sedang digunakan sehingga dapat d
 Jika belum mengetahui lokasi file virtual disk WSL, jalankan:
 
 ```powershell
-Get-ItemProperty Registry::HKCU\Software\Microsoft\Windows\CurrentVersion\Lxss\* |
-Select-Object DistributionName, BasePath
+Get-ItemProperty Registry::HKCU\Software\Microsoft\Windows\CurrentVersion\Lxss\* | Select-Object DistributionName, BasePath
 ```
 
 Contoh hasil:
